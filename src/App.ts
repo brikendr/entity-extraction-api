@@ -3,6 +3,7 @@ import * as express from 'express';
 import * as logger from 'morgan';
 import * as bodyParser from 'body-parser'
 import EntityExtractor from './routes/EntityExtractor';
+import HeroProvider from './routes/HeroProvider';
 
 // Creates and configures an ExpressJS web server.
 class App {
@@ -28,6 +29,7 @@ class App {
     // Configure API endpoints.
     public routes(): void {
         this.express.use('/api/extractor', EntityExtractor);
+        this.express.use('/api/heroes', HeroProvider);
     }
 }
 
