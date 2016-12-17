@@ -20,6 +20,22 @@ class HeroProvider {
             {
                 "id": 12,
                 "name": "Narco"
+            },
+            {
+                "id": 13,
+                "name": "Captain America"
+            },
+            {
+                "id": 14,
+                "name": "Iron Man"
+            },
+            {
+                "id": 15,
+                "name": "Joker"
+            },
+            {
+                "id": 16,
+                "name": "Spiderman"
             }
         ];
         res.send(heroes);

@@ -18,7 +18,7 @@ export class EntityExtractor {
      * returns a JSON object populated with the corresponding entities.
      */
     public async extractEntities(req: Request, res: Response, next: NextFunction) {
-        let textContent = req.query.textContent;
+        let textContent = req.body.textContent;
 
         if(textContent != null && textContent != "") {
             let taggedData = await ner.getEntities(textContent);
